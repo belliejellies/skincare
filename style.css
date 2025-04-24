@@ -32,7 +32,7 @@ body {
   }
 
   h1 {
-    font-family: "Lucida Console", sans-serif;
+    font-family: "Kranky",serif;
     font-size: 60px;
     text-align: center;
   }
@@ -54,7 +54,7 @@ body {
     left: 0px;
   }
   
-  /*
+
   #slider{
     font-size: 30px;
     background-color: #f7f3e7;
@@ -62,7 +62,67 @@ body {
     box-shadow: none;
   }
 
-  */
+  p {
+    font-family: "sour gummy";
+  }
 
+  h2 {
+    font-family: "Kranky";
+  }
+
+  #recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
   
-  
+.box{
+    border: 5px;
+    background-color: rgb(246, 237, 225);
+    box-shadow: 5px 6px 5px rgb(158, 158, 158);
+    width: 260px;
+    height: 325px;
+    padding: 15px;
+}
+
+.product-image{
+    max-height: 180px;
+    margin-left: 60px;
+
+}
+
+#cart{
+    background-color: rgb(203, 188, 150);
+    border-color: antiquewhite;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#account{
+    background-color: rgb(195, 179, 160);
+    border-color: beige;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+form input{
+    border-radius: 8px;
+    border-color: antiquewhite;
+    font-family: "sour gummy"
+
+}
+
+form label{
+    font-family: "Kranky";
+}
+
+#submit{
+    border-color: antiquewhite;
+    border-radius: 7px;
+    background-color: rgb(232, 222, 205);
+    font-family: "sour gummy";
+}
+
+#submit:hover{
+    background-color: rgb(227, 211, 186);
+}
