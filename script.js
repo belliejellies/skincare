@@ -13,7 +13,7 @@ const message = document.getElementById("message");
 if(form && message){
     form.addEventListener("submit",function(event){
         event.preventDefault();
-        const name = document.getElementById("name").value;
+        const username = document.getElementById("username").value;
         const email = document.getElementById("email").value;
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirmPassword").value;
@@ -23,7 +23,26 @@ if(form && message){
         if(password !== confirmPassword){
             message.textContent = "Passwords do not match!";
             return;
-        }
+        }else{
+            const user = {
+                email: email,
+                username: username,
+                password: password
+            };
+            let users = [];
+            try {
+                users = JSON.parse(localStorage.getItem("users")) || []; 
+                if (!Array.isArray(users)){
+                    users = [];
+                }
+            }catch(error){
+                users = [];
+            }
+            users.push(user);
+            localStorage.setItem("users",JSON.stringify(users));
+            message.textContent = "You have successfully created an account";
+            window.location.href = "login.html";
+        }      
     });
 }
 
