@@ -37,7 +37,20 @@ body {
     text-align: center;
   }
 
-  
+  .cart{
+    font-size: 15px;
+    font-family: "sour gummy";
+    border-color:rgb(196, 165, 128);
+    background-color: antiquewhite;
+    border-radius: 15px;
+  }
+
+  .cart:hover{
+    background-color: rgb(225, 198, 162);
+    transform: translateY(-2px);
+
+  }
+
   #division{
     position: fixed;
     top: 1px;
@@ -49,12 +62,38 @@ body {
     padding: 25px;
     transition: left 0.5s ease;
   }
+
+  #division a{
+    text-decoration: none;
+    font-family: "sour gummy";
+    font-size: 50px;
+    color: black
+
+  }
+
+  #login{
+    border-color: antiquewhite;
+    border-radius: 7px;
+    background-color: rgb(232, 222, 205);
+    font-family: "sour gummy";
+  }
+
+  #login:hover{
+    background-color: rgb(227, 211, 186);
+}
  
   #division.active{
     left: 0px;
   }
   
-
+  #close{
+    font-size: 20px;
+    font-family: "sour gummy";
+    border-color:rgb(196, 165, 128);
+    background-color: antiquewhite;
+    border-radius: 15px;
+  }
+  
   #slider{
     font-size: 30px;
     background-color: #f7f3e7;
@@ -88,8 +127,19 @@ body {
 .product-image{
     max-height: 180px;
     margin-left: 60px;
+}
+
+.ads img{
+  width:200px;
+  height: 290px;
+  margin-left: 30px;
 
 }
+
+.ads{
+  margin-top: 30px;
+}
+  
 
 #cart{
     background-color: rgb(203, 188, 150);
@@ -103,6 +153,8 @@ body {
     border-color: beige;
     padding: 5px;
     border-radius: 7px;
+    font-family: "sour gummy";
+    font-size: 18px;
 }
 
 form input{
